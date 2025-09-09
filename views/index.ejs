@@ -20,12 +20,17 @@
         h2 {
             color: red;
         }
-        
+
     </style>
 </head>
 <body>
     <h1>
         Welcome to the My Website
     </h1>
+            <p>
+                <% message.forEach(function(msg) { %>
+                    <%= msg %> <br>
+                <% }); %>
+            </p>
 </body>
 </html>

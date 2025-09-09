@@ -17,7 +17,14 @@ app.post("/api/auth/register", (req, res)=>{
 )
 
 app.get("/", (req, res) => {
-  res.render("index", { text: "Hello from EJS!" });
+  res.render("index", { message:[
+ "Hello from EJS!",
+ "This is a simple EJS example."
+ 
+  ]
+    
+
+ });
 });
 
 
